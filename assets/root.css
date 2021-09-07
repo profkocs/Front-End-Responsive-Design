@@ -74,6 +74,26 @@ body{
     margin-bottom:4rem ;
 }
 
+.section{
+    padding: 2rem 0 4rem;
+}
+
+.section__title{
+    font-size: var(--h1-font-size)
+
+}
+
+.section__subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section__title,
+.section__subtitle{
+    text-align: center; /* x,y center */
+}
+
 ul{
     list-style: none; 
 }
@@ -93,6 +113,56 @@ a{
     gap: 1.5rem;
 }
 
+/*==================== BUTTONS ====================*/
+.button{
+    display: inline-block; /* inline fit element, inline-block don't fit but fill block horizontally and put elements vertically, block don't fit but fill block and put elements vertically  */
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem;
+    margin: .5rem;
+    border-radius:  .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+}
+
+.button__icon{
+    font-size: 1.25rem;
+    margin-left: var(--mb-0-5);
+    transition: .3s;
+}
+
+.button--white{
+    background-color: #FFF;
+    color: var(--first-color);
+}
+
+.button--white:hover{
+    background-color: #FFF;
+}
+
+.button--flex{
+    display: inline-flex; /* buttons side by side */
+    align-items: center;
+}
+
+.button--small{
+    padding: .75rem 1rem;
+}
+
+.button--link{
+    padding: 0;
+    background-color: transparent;
+    color: var(--first-color);
+}
+
+.button--link:hover{
+    background-color: transparent;
+    color: var(--first-color-alt);
+
+}
 /* For small devices */
 @media screen and (max-width: 350px){
 
