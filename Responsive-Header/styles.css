@@ -1,27 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import '../assets/root.css';
-/*==================== BASE ====================*/
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body{
-    margin: 0 0 var(--header-height) 0;
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
-}
-
-ul{
-    list-style: none; 
-}
-
-a{
-    text-decoration: none;
-}
 
 /*==================== HEADER ====================*/
 
@@ -42,12 +20,6 @@ a{
     align-items: center;
 }
 
-.container{
-    max-width: 768px;
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-}
-
 .nav__logo{
     color: var(--title-color);
     font-weight: var(--font-medium);
@@ -55,13 +27,6 @@ a{
 
 .nav__logo:hover{
     color: var(--first-color);
-}
-
-
-
-.grid{
-    display: grid;
-    gap: 1.5rem;
 }
 
 .nav__list{
@@ -147,11 +112,6 @@ body.dark-theme{
 /* For small devices */
 @media screen and (max-width: 350px){
 
-    .container{
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
-    }
-
     .nav__menu{
         padding: 2rem .25rem 4rem;
     }
@@ -183,15 +143,6 @@ body.dark-theme{
 
 /* For large devices */
 @media screen and (min-width:768px) {
-
-    .container{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    body{
-        margin: 0;
-    }
 
     .header{
         top:0;

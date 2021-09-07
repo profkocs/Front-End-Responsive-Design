@@ -52,6 +52,75 @@
     --z-modal: 1000; /* top */
 }
 
+/*==================== BASE ====================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+.section{
+    padding: 6rem 0 2rem;
+}
+.section__subtitle{
+    margin-bottom:4rem ;
+}
+
+ul{
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* For small devices */
+@media screen and (max-width: 350px){
+
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+}
+/* For large devices */
+@media screen and (min-width:768px) {
+
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .section{
+        padding: 6rem 0 2rem;
+    }
+    .section__subtitle{
+        margin-bottom:4rem ;
+    }
+}
+
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
     :root {
